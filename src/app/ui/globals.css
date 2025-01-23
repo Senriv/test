@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* set off default show password in different internet browsers */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear,
+input[type="password"]::-webkit-password-eye {
+  display: none;
+}
+
+input[type="password"] {
+  -webkit-text-security: none;
+  appearance: none;
+}
